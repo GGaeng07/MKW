@@ -30,7 +30,7 @@ void to_hms(int total, int* h, int* m, int* s) {
 int main(void) {
     SetConsoleOutputCP(65001);
 
-    // #실습1
+    // #실습1 변경
     char str[100];
     int count = 0;
     printf("영문 문장을 입력하시오 : ");
@@ -40,14 +40,14 @@ int main(void) {
     str[strcspn(str, "\n")] = '\0';
 
     for (char* p = str; *p != '\0'; p++) {
-        if (*p >= 'a' && *p <= 'z') {
-            *p = *p - 32;
+        if (*p >= 'A' && *p <= 'Z') {
+            *p = *p + 32;
         }
         if (*p != ' ') {
             count++;
         }
     }
-    printf("대문자 : %s\n", str);
+    printf("소문자 : %s\n", str);
     printf("글자 수 (공백 제외) : %d\n\n", count);
 
     // #실습2
