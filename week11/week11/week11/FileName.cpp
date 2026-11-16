@@ -1,5 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-	printf ("Hello wolrd");
+	
+	printf("I like C programming");
+	printf("My name is Kyung wook");
 }
